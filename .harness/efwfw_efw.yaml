@@ -1,0 +1,18 @@
+template:
+  name: efwfw
+  identifier: efwfw
+  versionLabel: efw
+  type: Stage
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: sa
+              identifier: sa
+              template:
+                templateRef: org.t1
+                versionLabel: v1
