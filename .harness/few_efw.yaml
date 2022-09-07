@@ -1,0 +1,18 @@
+template:
+  name: few
+  identifier: few
+  versionLabel: efw
+  type: Stage
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: ew
+              identifier: ew
+              template:
+                templateRef: org.stepppp
+                versionLabel: "1"
