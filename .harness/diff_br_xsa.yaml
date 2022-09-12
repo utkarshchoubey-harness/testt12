@@ -1,0 +1,19 @@
+template:
+  name: diff br
+  identifier: diff_br
+  versionLabel: xsa
+  type: Step
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: HarnessApproval
+    timeout: 1d
+    spec:
+      approvalMessage: Please review the following information and approve the pipeline progression
+      includePipelineExecutionHistory: true
+      approvers:
+        userGroups: <+input>
+        minimumCount: 1
+        disallowPipelineExecutor: false
+      approverInputs: []
