@@ -8,7 +8,7 @@ template:
   tags: {}
   spec:
     type: HarnessApproval
-    timeout: 1d
+    timeout: <+input>
     spec:
       approvalMessage: Please review the following information and approve the pipeline progression
       includePipelineExecutionHistory: true
@@ -16,4 +16,5 @@ template:
         userGroups: <+input>
         minimumCount: 1
         disallowPipelineExecutor: false
-      approverInputs: []
+      approverInputs:
+        - name: fewf
