@@ -12,11 +12,10 @@ template:
       approvalMessage: Please review the following information and approve the pipeline progression
       includePipelineExecutionHistory: true
       approvers:
-        userGroups:
-          - account.wqedrq
+        userGroups: <+input>
         minimumCount: 1
         disallowPipelineExecutor: false
       approverInputs:
         - name: fewf
           defaultValue: ""
-    timeout: 10m
+    timeout: <+input>
