@@ -1,0 +1,19 @@
+template:
+  name: fewfwwfw
+  identifier: fewfwwfw
+  versionLabel: fweffww
+  type: Stage
+  projectIdentifier: defaultproject
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: bjhg
+              identifier: bjhg
+              template:
+                templateRef: efwf
+                versionLabel: few3
