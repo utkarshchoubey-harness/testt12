@@ -17,3 +17,6 @@ template:
               template:
                 templateRef: efwf
                 versionLabel: few3
+                templateInputs:
+                  type: ShellScript
+                  timeout: <+input>
