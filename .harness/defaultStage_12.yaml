@@ -1,0 +1,19 @@
+template:
+  name: defaultStage
+  identifier: defaultStage
+  versionLabel: "12"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: gfdg
+              identifier: gfdg
+              template:
+                templateRef: defaultStep
+                versionLabel: "12"
