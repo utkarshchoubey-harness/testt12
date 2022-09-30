@@ -1,19 +1,30 @@
 template:
-  name: defaultStage
-  identifier: defaultStage
+  name: "defaultStage"
+  identifier: "defaultStage"
   versionLabel: "12"
-  type: Stage
-  projectIdentifier: njh
-  orgIdentifier: default
+  type: "Stage"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: gfdg
-              identifier: gfdg
-              template:
-                templateRef: defaultStep
-                versionLabel: "12"
+        - step:
+            name: "gfdg"
+            identifier: "gfdg"
+            template:
+              templateRef: "defaultStep"
+              versionLabel: "12"
+              templateInputs:
+                type: "ShellScript"
+                spec:
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "<+input>"
+                  environmentVariables:
+                  - name: "yrtyry"
+                    type: "String"
+                    value: "<+input>"
