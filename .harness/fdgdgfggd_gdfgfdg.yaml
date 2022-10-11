@@ -7,7 +7,7 @@ template:
   orgIdentifier: default
   tags: {}
   spec:
-    timeout: 10m
+    timeout: <+input>
     type: ShellScript
     spec:
       shell: Bash
@@ -16,5 +16,8 @@ template:
         type: Inline
         spec:
           script: <+input>
-      environmentVariables: []
+      environmentVariables:
+        - name: rewr
+          type: String
+          value: <+input>
       outputVariables: []
