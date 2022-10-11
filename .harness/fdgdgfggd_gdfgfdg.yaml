@@ -7,7 +7,6 @@ template:
   orgIdentifier: default
   tags: {}
   spec:
-    timeout: <+input>
     type: ShellScript
     spec:
       shell: Bash
@@ -15,9 +14,10 @@ template:
       source:
         type: Inline
         spec:
-          script: <+input>
+          script: kmerk
       environmentVariables:
         - name: rewr
           type: String
-          value: <+input>
+          value: fff
       outputVariables: []
+    timeout: 1m
