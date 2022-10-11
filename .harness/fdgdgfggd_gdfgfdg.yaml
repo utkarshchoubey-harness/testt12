@@ -14,10 +14,10 @@ template:
       source:
         type: Inline
         spec:
-          script: kmerk
+          script: <+input>
       environmentVariables:
         - name: rewr
           type: String
           value: fff
       outputVariables: []
-    timeout: 1m
+    timeout: <+input>
