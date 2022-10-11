@@ -14,10 +14,10 @@ template:
       source:
         type: Inline
         spec:
-          script: <+input>
+          script: rewr
       environmentVariables:
         - name: rewr
           type: String
           value: fff
       outputVariables: []
-    timeout: <+input>
+    timeout: 1d
