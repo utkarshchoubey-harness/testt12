@@ -20,4 +20,4 @@ template:
           type: String
           value: fff
       outputVariables: []
-    timeout: 1d
+    timeout: <+input>
