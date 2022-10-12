@@ -1,0 +1,19 @@
+template:
+  name: demoStage
+  identifier: demoStage
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: rew
+              identifier: rew
+              template:
+                templateRef: demoStep
+                versionLabel: "1"
