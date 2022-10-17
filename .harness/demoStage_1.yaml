@@ -20,13 +20,8 @@ template:
               templateInputs:
                 type: "ShellScript"
                 spec:
-                  environmentVariables:
-                  - name: "rw3rwe"
-                    type: "String"
-                    value: "<+input>"
-                  - name: "r34"
-                    type: "String"
-                    value: "<+input>"
-                  - name: "yrtyr"
-                    type: "String"
-                    value: "<+input>"
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "<+input>"
+                timeout: "<+input>"
