@@ -43,4 +43,7 @@ template:
                   - name: "rew"
                     type: "String"
                     value: "<+input>"
+                  - name: "hy"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
