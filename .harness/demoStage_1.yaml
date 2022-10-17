@@ -46,4 +46,7 @@ template:
                   - name: "hy"
                     type: "String"
                     value: "<+input>"
+                  - name: "gf"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
