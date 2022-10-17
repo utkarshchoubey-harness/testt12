@@ -20,10 +20,6 @@ template:
               templateInputs:
                 type: "ShellScript"
                 spec:
-                  source:
-                    type: "Inline"
-                    spec:
-                      script: "<+input>"
                   environmentVariables:
                   - name: "rw3rwe"
                     type: "String"
@@ -34,4 +30,3 @@ template:
                   - name: "yrtyr"
                     type: "String"
                     value: "<+input>"
-                timeout: "<+input>"
