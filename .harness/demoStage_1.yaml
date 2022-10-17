@@ -34,4 +34,7 @@ template:
                   - name: "yrtyr"
                     type: "String"
                     value: "<+input>"
+                  - name: "tre"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
