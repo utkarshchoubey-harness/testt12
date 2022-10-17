@@ -1,0 +1,19 @@
+template:
+  name: stage1
+  identifier: stage1
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: Default
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: sd
+              identifier: sd
+              template:
+                templateRef: step11
+                versionLabel: "1"
