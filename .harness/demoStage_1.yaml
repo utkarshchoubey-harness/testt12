@@ -49,4 +49,7 @@ template:
                   - name: "gf"
                     type: "String"
                     value: "<+input>"
+                  - name: "tyu"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
