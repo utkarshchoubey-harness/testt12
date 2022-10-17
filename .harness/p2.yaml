@@ -1,0 +1,29 @@
+pipeline:
+  name: p2
+  identifier: p2
+  template:
+    templateRef: pipe1
+    versionLabel: "1"
+    templateInputs:
+      stages:
+        - stage:
+            identifier: fd
+            template:
+              templateInputs:
+                type: Approval
+                spec:
+                  execution:
+                    steps:
+                      - step:
+                          identifier: sd
+                          template:
+                            templateInputs:
+                              type: ShellScript
+                              spec:
+                                source:
+                                  type: Inline
+                                  spec:
+                                    script: <+input>
+  tags: {}
+  projectIdentifier: Default
+  orgIdentifier: default
