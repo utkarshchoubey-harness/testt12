@@ -40,4 +40,7 @@ template:
                   - name: "gr"
                     type: "String"
                     value: "<+input>"
+                  - name: "rew"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
