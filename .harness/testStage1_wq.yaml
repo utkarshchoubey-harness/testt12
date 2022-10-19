@@ -1,0 +1,19 @@
+template:
+  name: testStage1
+  identifier: testStage1
+  versionLabel: wq
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: dsaa
+              identifier: dsaa
+              template:
+                templateRef: teststep1
+                versionLabel: g
