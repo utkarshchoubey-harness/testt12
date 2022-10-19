@@ -55,4 +55,7 @@ template:
                   - name: "fdsfewrfwrwer"
                     type: "String"
                     value: "<+input>"
+                  - name: "y56"
+                    type: "String"
+                    value: "<+input>"
                 timeout: "<+input>"
