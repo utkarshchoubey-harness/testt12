@@ -1,19 +1,22 @@
 template:
-  name: stg1
-  identifier: stg1
+  name: "stg1"
+  identifier: "stg1"
   versionLabel: "1"
-  type: Stage
-  projectIdentifier: Default
-  orgIdentifier: default
+  type: "Stage"
+  projectIdentifier: "Default"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: fg
-              identifier: fg
-              template:
-                templateRef: stp1
-                versionLabel: "1"
+        - step:
+            name: "fg"
+            identifier: "fg"
+            template:
+              templateRef: "stp1"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                timeout: "<+input>"
