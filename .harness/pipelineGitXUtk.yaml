@@ -1,0 +1,9 @@
+pipeline:
+  name: pipelineGitXUtk
+  identifier: pipelineGitXUtk
+  template:
+    templateRef: pip1
+    versionLabel: "1"
+  tags: {}
+  projectIdentifier: Default
+  orgIdentifier: default
