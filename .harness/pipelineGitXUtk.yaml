@@ -1,9 +1,25 @@
 pipeline:
-  name: pipelineGitXUtk
-  identifier: pipelineGitXUtk
+  name: "pipelineGitXUtk"
+  identifier: "pipelineGitXUtk"
   template:
-    templateRef: pip1
+    templateRef: "pip1"
     versionLabel: "1"
+    templateInputs:
+      stages:
+      - stage:
+          identifier: "dgfd"
+          template:
+            templateInputs:
+              type: "Approval"
+              spec:
+                execution:
+                  steps:
+                  - step:
+                      identifier: "fg"
+                      template:
+                        templateInputs:
+                          type: "ShellScript"
+                          timeout: "<+input>"
   tags: {}
-  projectIdentifier: Default
-  orgIdentifier: default
+  projectIdentifier: "Default"
+  orgIdentifier: "default"
