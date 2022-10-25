@@ -17,3 +17,6 @@ template:
             template:
               templateRef: "demoStep"
               versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                timeout: "<+input>"
