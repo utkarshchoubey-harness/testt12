@@ -1,30 +1,34 @@
 pipeline:
-  name: eqwe
-  identifier: eqwe
-  projectIdentifier: njh
-  orgIdentifier: default
+  name: "eqwe"
+  identifier: "eqwe"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
   tags: {}
   stages:
-    - stage:
-        name: ds
-        identifier: ds
-        description: ""
-        type: Approval
-        spec:
-          execution:
-            steps:
-              - step:
-                  name: rwe
-                  identifier: rwe
-                  template:
-                    templateRef: stz1
-                    versionLabel: "1"
-                    templateInputs:
-                      type: ShellScript
-                      timeout: <+input>
+  - stage:
+      name: "ds"
+      identifier: "ds"
+      description: ""
+      type: "Approval"
+      spec:
+        execution:
+          steps:
+          - step:
+              name: "rwe"
+              identifier: "rwe"
+              template:
+                templateRef: "stz1"
+                versionLabel: "1"
+                templateInputs:
+                  type: "ShellScript"
+                  timeout: "<+input>"
+                  spec:
+                    source:
+                      type: "Inline"
                       spec:
-                        source:
-                          type: Inline
-                          spec:
-                            script: <+input>
-        tags: {}
+                        script: "<+input>"
+                    environmentVariables:
+                    - name: "rwer"
+                      type: "String"
+                      value: "<+input>"
+      tags: {}
