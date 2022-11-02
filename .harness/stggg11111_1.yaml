@@ -1,0 +1,19 @@
+template:
+  name: stggg11111
+  identifier: stggg11111
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: re
+              identifier: re
+              template:
+                templateRef: stz1
+                versionLabel: "1"
