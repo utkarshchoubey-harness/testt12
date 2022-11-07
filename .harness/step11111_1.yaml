@@ -15,6 +15,6 @@ template:
       source:
         type: Inline
         spec:
-          script: weq
+          script: <+input>
       environmentVariables: []
       outputVariables: []
