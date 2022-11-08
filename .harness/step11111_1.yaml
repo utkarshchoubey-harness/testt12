@@ -14,7 +14,7 @@ template:
       source:
         type: Inline
         spec:
-          script: ghchfg
+          script: <+input>
       environmentVariables: []
       outputVariables: []
     timeout: 1m
