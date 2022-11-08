@@ -17,4 +17,4 @@ template:
           script: ghchfg
       environmentVariables: []
       outputVariables: []
-    timeout: 5m
+    timeout: <+input>
