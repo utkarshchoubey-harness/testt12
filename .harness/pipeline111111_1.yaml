@@ -14,3 +14,18 @@ template:
         template:
           templateRef: "stage111111"
           versionLabel: "qwe"
+          templateInputs:
+            type: "Approval"
+            spec:
+              execution:
+                steps:
+                - step:
+                    identifier: "das"
+                    template:
+                      templateInputs:
+                        type: "ShellScript"
+                        spec:
+                          source:
+                            type: "Inline"
+                            spec:
+                              script: "<+input>"
