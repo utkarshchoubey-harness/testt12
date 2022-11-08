@@ -1,31 +1,32 @@
 template:
-  name: "pipeline111111"
-  identifier: "pipeline111111"
+  name: pipeline111111
+  identifier: pipeline111111
   versionLabel: "1"
-  type: "Pipeline"
-  projectIdentifier: "njh"
-  orgIdentifier: "default"
+  type: Pipeline
+  projectIdentifier: njh
+  orgIdentifier: default
   tags: {}
   spec:
     stages:
-    - stage:
-        name: "gdfg"
-        identifier: "gdfg"
-        template:
-          templateRef: "stage111111"
-          versionLabel: "qwe"
-          templateInputs:
-            type: "Approval"
-            spec:
-              execution:
-                steps:
-                - step:
-                    identifier: "das"
-                    template:
-                      templateInputs:
-                        type: "ShellScript"
-                        spec:
-                          source:
-                            type: "Inline"
+      - stage:
+          name: gdfg
+          identifier: gdfg
+          template:
+            templateRef: stage111111
+            versionLabel: qwe
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: das
+                        template:
+                          templateInputs:
+                            type: ShellScript
                             spec:
-                              script: "<+input>"
+                              source:
+                                type: Inline
+                                spec:
+                                  script: <+input>
+                            timeout: <+input>
