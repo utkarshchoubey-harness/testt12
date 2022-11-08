@@ -17,4 +17,4 @@ template:
           script: <+input>
       environmentVariables: []
       outputVariables: []
-    timeout: 1m
+    timeout: <+input>
