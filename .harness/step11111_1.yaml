@@ -14,7 +14,7 @@ template:
       source:
         type: Inline
         spec:
-          script: "765"
+          script: <+input>
       environmentVariables: []
       outputVariables: []
     timeout: <+input>
