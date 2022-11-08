@@ -29,4 +29,3 @@ template:
                             type: "Inline"
                             spec:
                               script: "<+input>"
-                        timeout: "<+input>"
