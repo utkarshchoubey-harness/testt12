@@ -14,7 +14,7 @@ template:
       source:
         type: Inline
         spec:
-          script: <+input>
+          script: fgh
       environmentVariables: []
       outputVariables: []
     timeout: <+input>
