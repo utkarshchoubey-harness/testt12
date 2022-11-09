@@ -1,0 +1,19 @@
+template:
+  name: trestageInline
+  identifier: trestageInline
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: fgh
+              identifier: fgh
+              template:
+                templateRef: stepInline1
+                versionLabel: "1"
