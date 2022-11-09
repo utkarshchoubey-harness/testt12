@@ -1,18 +1,25 @@
 template:
-  name: StageRepo2Def
-  identifier: StageRepo2Def
+  name: "StageRepo2Def"
+  identifier: "StageRepo2Def"
   versionLabel: "1"
-  type: Stage
-  orgIdentifier: utkarsh
+  type: "Stage"
+  orgIdentifier: "utkarsh"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: ter
-              identifier: ter
-              template:
-                templateRef: org.stepRepo1Def
-                versionLabel: "1"
+        - step:
+            name: "ter"
+            identifier: "ter"
+            template:
+              templateRef: "org.stepRepo1Def"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                spec:
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "<+input>"
