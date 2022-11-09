@@ -1,0 +1,19 @@
+template:
+  name: step11
+  identifier: step11
+  versionLabel: "1"
+  type: Step
+  orgIdentifier: utkarsh
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: fds
+      environmentVariables: []
+      outputVariables: []
