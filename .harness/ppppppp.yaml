@@ -1,0 +1,9 @@
+pipeline:
+  name: ppppppp
+  identifier: ppppppp
+  template:
+    templateRef: pipelineRemoteDF
+    versionLabel: "1"
+  tags: {}
+  projectIdentifier: njh
+  orgIdentifier: default
