@@ -1,19 +1,22 @@
 template:
-  name: trestageInline
-  identifier: trestageInline
+  name: "trestageInline"
+  identifier: "trestageInline"
   versionLabel: "1"
-  type: Stage
-  projectIdentifier: njh
-  orgIdentifier: default
+  type: "Stage"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: fgh
-              identifier: fgh
-              template:
-                templateRef: stepInline1
-                versionLabel: "1"
+        - step:
+            name: "fgh"
+            identifier: "fgh"
+            template:
+              templateRef: "stepInline1"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                timeout: "<+input>"
