@@ -6,7 +6,7 @@ template:
   orgIdentifier: utkarsh
   tags: {}
   spec:
-    timeout: 10m
+    timeout: <+input>
     type: ShellScript
     spec:
       shell: Bash
