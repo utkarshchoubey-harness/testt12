@@ -1,0 +1,18 @@
+template:
+  name: StageRepo2Def
+  identifier: StageRepo2Def
+  versionLabel: "1"
+  type: Stage
+  orgIdentifier: utkarsh
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: ter
+              identifier: ter
+              template:
+                templateRef: org.stepRepo1Def
+                versionLabel: "1"
