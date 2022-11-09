@@ -1,0 +1,30 @@
+template:
+  name: "stageNonDefafult"
+  identifier: "stageNonDefafult"
+  versionLabel: "1"
+  type: "Stage"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
+  tags: {}
+  spec:
+    type: "Approval"
+    spec:
+      execution:
+        steps:
+        - step:
+            name: "gdf"
+            identifier: "gdf"
+            template:
+              templateRef: "stz1"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                spec:
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "<+input>"
+                  environmentVariables:
+                  - name: "rwer"
+                    type: "String"
+                    value: "<+input>"

@@ -1,0 +1,9 @@
+pipeline:
+  name: nonDefaultPipelineNonDefaultTemplates
+  identifier: nonDefaultPipelineNonDefaultTemplates
+  template:
+    templateRef: org.pipelineNonDefault1
+    versionLabel: "1"
+  tags: {}
+  projectIdentifier: utkarsh
+  orgIdentifier: utkarsh
