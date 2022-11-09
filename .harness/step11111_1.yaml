@@ -17,4 +17,4 @@ template:
           script: ty
       environmentVariables: []
       outputVariables: []
-    timeout: 1m
+    timeout: <+input>
