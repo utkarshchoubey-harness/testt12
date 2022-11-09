@@ -1,0 +1,9 @@
+pipeline:
+  name: PipelineRepo2
+  identifier: PipelineRepo2
+  template:
+    templateRef: org.PipelineRepo1
+    versionLabel: "1"
+  tags: {}
+  projectIdentifier: utkarsh
+  orgIdentifier: utkarsh
