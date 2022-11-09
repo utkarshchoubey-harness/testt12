@@ -1,0 +1,19 @@
+template:
+  name: pipelineApprovalStep
+  identifier: pipelineApprovalStep
+  versionLabel: q
+  type: Step
+  projectIdentifier: utkarsh
+  orgIdentifier: utkarsh
+  tags: {}
+  spec:
+    type: HarnessApproval
+    timeout: <+input>
+    spec:
+      approvalMessage: Please review the following information and approve the pipeline progression
+      includePipelineExecutionHistory: true
+      approvers:
+        userGroups: <+input>
+        minimumCount: 1
+        disallowPipelineExecutor: false
+      approverInputs: []
