@@ -24,7 +24,6 @@ template:
                     template:
                       templateInputs:
                         type: "ShellScript"
-                        timeout: "<+input>"
                         spec:
                           source:
                             type: "Inline"
