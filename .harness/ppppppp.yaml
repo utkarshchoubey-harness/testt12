@@ -24,6 +24,7 @@ pipeline:
                               type: "Inline"
                               spec:
                                 script: "<+input>"
+                          timeout: "<+input>"
   tags: {}
   projectIdentifier: "njh"
   orgIdentifier: "default"
