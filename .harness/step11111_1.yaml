@@ -17,4 +17,4 @@ template:
           script: gr
       environmentVariables: []
       outputVariables: []
-    timeout: <+input>
+    timeout: 10m
