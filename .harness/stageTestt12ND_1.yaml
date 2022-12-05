@@ -1,0 +1,19 @@
+template:
+  name: stageTestt12ND
+  identifier: stageTestt12ND
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: gfdg
+              identifier: gfdg
+              template:
+                templateRef: stepGITDEMOD
+                versionLabel: "1"
