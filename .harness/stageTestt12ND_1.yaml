@@ -1,19 +1,26 @@
 template:
-  name: stageTestt12ND
-  identifier: stageTestt12ND
+  name: "stageTestt12ND"
+  identifier: "stageTestt12ND"
   versionLabel: "1"
-  type: Stage
-  projectIdentifier: njh
-  orgIdentifier: default
+  type: "Stage"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: gfdg
-              identifier: gfdg
-              template:
-                templateRef: stepGITDEMOD
-                versionLabel: "1"
+        - step:
+            name: "gfdg"
+            identifier: "gfdg"
+            template:
+              templateRef: "stepGITDEMOD"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                spec:
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "<+input>"
