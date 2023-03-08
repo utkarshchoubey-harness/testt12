@@ -1,0 +1,29 @@
+pipeline:
+  name: gvfererer
+  identifier: gvfererer
+  template:
+    templateRef: jhgjhgjj
+    versionLabel: jh
+    templateInputs:
+      stages:
+        - stage:
+            identifier: hfghfhfghg
+            template:
+              templateInputs:
+                type: Approval
+                spec:
+                  execution:
+                    steps:
+                      - step:
+                          identifier: ytytyy
+                          type: HarnessApproval
+                          spec:
+                            approvers:
+                              userGroups: <+input>
+                variables:
+                  - name: ytytyty
+                    type: Number
+                    value: <+input>.allowedValues(1,2,4,5)
+  tags: {}
+  projectIdentifier: njh
+  orgIdentifier: default
