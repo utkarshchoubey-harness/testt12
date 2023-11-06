@@ -1,0 +1,22 @@
+pipeline:
+  name: childRemote2222
+  identifier: childRemote2222
+  projectIdentifier: SahilProject
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: gdsf
+        identifier: gdsf
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
