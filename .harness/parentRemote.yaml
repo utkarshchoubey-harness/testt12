@@ -1,0 +1,16 @@
+pipeline:
+  name: parentRemote
+  identifier: parentRemote
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ghfdgf
+        identifier: ghfdgf
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: childRemote
+          project: fdsf
