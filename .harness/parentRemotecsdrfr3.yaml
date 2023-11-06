@@ -1,0 +1,17 @@
+pipeline:
+  name: parentRemotecsdrfr3
+  identifier: parentRemotecsdrfr3
+  projectIdentifier: SahilProject
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: gfdsfd
+        identifier: gfdsfd
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: childRemote2222
+          project: SahilProject
+          outputs: []
