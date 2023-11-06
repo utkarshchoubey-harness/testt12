@@ -1,0 +1,17 @@
+pipeline:
+  name: parentRemote
+  identifier: parentRemote
+  projectIdentifier: SahilProject
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: gdfg
+        identifier: gdfg
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: childRenote
+          project: SahilProject
+          outputs: []
