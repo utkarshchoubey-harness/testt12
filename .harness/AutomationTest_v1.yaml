@@ -7,7 +7,7 @@ template:
   type: Stage
   tags: {}
   spec:
-    type: Custom
+    type: CI
     spec:
       execution:
         steps:
