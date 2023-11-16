@@ -1,0 +1,19 @@
+inputSet:
+  name: inputsettest
+  identifier: inputsettest
+  orgIdentifier: default
+  projectIdentifier: fdsf
+  pipeline:
+    identifier: testimportyaml
+    stages:
+      - stage:
+          identifier: das
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 5h
