@@ -1,0 +1,22 @@
+pipeline:
+  name: testimportyaml
+  identifier: testimportyaml
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: das
+        identifier: das
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 12222m
+        tags: {}
