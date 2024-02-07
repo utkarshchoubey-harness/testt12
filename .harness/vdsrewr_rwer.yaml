@@ -1,0 +1,48 @@
+template:
+  name: vdsrewr
+  type: Stage
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  spec:
+    type: Deployment
+    spec:
+      deploymentType: Kubernetes
+      environment:
+        environmentRef: dfsf
+        deployToAll: false
+        infrastructureDefinitions:
+          - identifier: gfdg
+      service:
+        serviceRef: k8s
+        serviceInputs:
+          serviceDefinition:
+            type: Kubernetes
+            spec:
+              variables:
+                - name: var1
+                  type: String
+                  default: ef
+                  value: <+input>
+                - name: var2
+                  type: String
+                  value: <+input>
+                - name: var3
+                  type: String
+                  value: <+input>
+      execution:
+        steps:
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 10m
+        rollbackSteps: []
+    failureStrategies:
+      - onFailure:
+          errors:
+            - AllErrors
+          action:
+            type: StageRollback
+  identifier: vdsrewr
+  versionLabel: rwer
