@@ -1,0 +1,66 @@
+template:
+  name: fsdfewe
+  identifier: fsdfewe
+  versionLabel: ew
+  type: Pipeline
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: test12121
+          identifier: test12121
+          tags: {}
+          template:
+            templateRef: vdsrewr
+            versionLabel: rwer
+            gitBranch: main-patch-e3
+            templateInputs:
+              type: Deployment
+              spec:
+                service:
+                  serviceInputs:
+                    serviceDefinition:
+                      type: Kubernetes
+                      spec:
+                        variables:
+                          - name: var1
+                            type: String
+                            default: ef
+                            value: <+input>
+                          - name: var2
+                            type: String
+                            value: <+input>
+                          - name: var3
+                            type: String
+                            value: <+input>
+      - stage:
+          name: ewrwerwerw
+          identifier: ewrwerwerw
+          description: ""
+          type: Deployment
+          spec:
+            deploymentType: Kubernetes
+            environment:
+              useFromStage:
+                stage: test12121
+            service:
+              useFromStage:
+                stage: test12121
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+              rollbackSteps: []
+          tags: {}
+          failureStrategies:
+            - onFailure:
+                errors:
+                  - AllErrors
+                action:
+                  type: StageRollback
