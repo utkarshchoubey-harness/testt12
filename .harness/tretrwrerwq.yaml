@@ -3,32 +3,8 @@ pipeline:
   identifier: tretrwrerwq
   tags: {}
   template:
-    templateRef: fsdfewe
-    versionLabel: ew
-    gitBranch: main-patch-e3
-    templateInputs:
-      stages:
-        - stage:
-            identifier: test12121
-            template:
-              templateInputs:
-                type: Deployment
-                spec:
-                  service:
-                    serviceInputs:
-                      serviceDefinition:
-                        type: Kubernetes
-                        spec:
-                          variables:
-                            - name: var1
-                              type: String
-                              default: ef
-                              value: <+input>
-                            - name: var2
-                              type: String
-                              value: <+input>
-                            - name: var3
-                              type: String
-                              value: <+input>
+    templateRef: account.vdfwewrer
+    versionLabel: ewqqwewq
+    gitBranch: main-patch-e3-patch-3
   projectIdentifier: fdsf
   orgIdentifier: default
