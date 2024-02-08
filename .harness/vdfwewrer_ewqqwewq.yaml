@@ -28,3 +28,4 @@ template:
           template:
             templateRef: account.testrbacchange
             versionLabel: v1
+    allowStageExecutions: true
