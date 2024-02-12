@@ -38,3 +38,4 @@ template:
                     spec:
                       duration: 10m
           tags: {}
+    allowStageExecutions: true
