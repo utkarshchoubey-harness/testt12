@@ -1,0 +1,10 @@
+pipeline:
+  name: pipelinesamerepodiffbranch
+  identifier: pipelinesamerepodiffbranch
+  tags: {}
+  template:
+    templateRef: samereponondefBranchPIpe
+    versionLabel: "1"
+    gitBranch: main-patch-2
+  projectIdentifier: fdsf
+  orgIdentifier: default
