@@ -1,0 +1,40 @@
+template:
+  name: samereponondefBranchPIpe
+  identifier: samereponondefBranchPIpe
+  versionLabel: "1"
+  type: Pipeline
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: tgre
+          identifier: tgre
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
+      - stage:
+          name: fsdrfe
+          identifier: fsdrfe
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
