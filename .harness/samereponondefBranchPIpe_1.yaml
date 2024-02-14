@@ -11,31 +11,24 @@ template:
       - stage:
           name: tgre
           identifier: tgre
-          description: ""
-          type: Custom
-          spec:
-            execution:
-              steps:
-                - step:
-                    type: Wait
-                    name: Wait_1
-                    identifier: Wait_1
-                    spec:
-                      duration: 10m
           tags: {}
+          template:
+            templateRef: teertete54
+            versionLabel: "54545"
+            gitBranch: main-patch-2
       - stage:
           name: fsdrfe
           identifier: fsdrfe
-          description: ""
-          type: Custom
-          spec:
-            execution:
-              steps:
-                - step:
-                    type: Wait
-                    name: Wait_1
-                    identifier: Wait_1
-                    spec:
-                      duration: 10m
           tags: {}
+          template:
+            templateRef: gg
+            versionLabel: rte
+            gitBranch: main-patch-2
+      - stage:
+          name: er
+          identifier: er
+          tags: {}
+          template:
+            templateRef: gg
+            versionLabel: rte
     allowStageExecutions: true
