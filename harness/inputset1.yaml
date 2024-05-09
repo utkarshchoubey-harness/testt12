@@ -1,0 +1,19 @@
+inputSet:
+  name: dsd
+  identifier: dsd
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  projectIdentifier: NGPipeAutoK8sSjGhcn9b89
+  pipeline:
+    identifier: dfgretre
+    stages:
+      - stage:
+          identifier: hf
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 1h
