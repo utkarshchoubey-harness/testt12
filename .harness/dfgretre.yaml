@@ -1,0 +1,22 @@
+pipeline:
+  name: dfgretre
+  identifier: dfgretre
+  tags: {}
+  projectIdentifier: NGPipeAutoK8sSjGhcn9b89
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  stages:
+    - stage:
+        name: hf
+        identifier: hf
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: <+input>
+        tags: {}
