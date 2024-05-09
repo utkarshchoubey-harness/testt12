@@ -1,0 +1,20 @@
+inputSet:
+  name: bcvbbcvb
+  tags: {}
+  identifier: bcvbbcvb
+  orgIdentifier: default
+  projectIdentifier: RishiTest
+  pipeline:
+    identifier: dfgretre
+    stages:
+      - stage:
+          identifier: hf
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 1h
