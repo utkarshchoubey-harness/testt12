@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: hfgh
         identifier: hfgh
-        description: ""
+        description: "fsdf"
         type: Custom
         spec:
           execution:
