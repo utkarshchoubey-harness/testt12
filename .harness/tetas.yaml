@@ -1,0 +1,14 @@
+pipeline:
+  name: tetas
+  identifier: tetas
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sa
+        identifier: sa
+        tags: {}
+        template:
+          templateRef: stageTemplate2
+          versionLabel: "1"
