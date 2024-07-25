@@ -16,4 +16,4 @@ template:
               name: Wait_1
               identifier: Wait_1
               spec:
-                duration: <+input>
+                duration: 10m
