@@ -12,8 +12,9 @@ template:
       execution:
         steps:
           - step:
-              type: Wait
               name: Wait_1
               identifier: Wait_1
-              spec:
-                duration: 10m
+              template:
+                templateRef: stepxccvbnnfs
+                versionLabel: "2"
+                gitBranch: main-patch-e3-patch-3
