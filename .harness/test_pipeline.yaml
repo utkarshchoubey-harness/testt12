@@ -12,3 +12,15 @@ pipeline:
         template:
           templateRef: stageTemplate2
           versionLabel: "1"
+          templateInputs:
+            type: Custom
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: Wait_1
+                      template:
+                        templateInputs:
+                          type: Wait
+                          spec:
+                            duration: <+input>
