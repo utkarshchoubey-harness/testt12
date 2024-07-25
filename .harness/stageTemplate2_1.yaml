@@ -18,3 +18,7 @@ template:
                 templateRef: stepxccvbnnfs
                 versionLabel: "2"
                 gitBranch: main-patch-e3-patch-3
+                templateInputs:
+                  type: Wait
+                  spec:
+                    duration: <+input>
