@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: dasadwqe
         identifier: dasadwqe
-        description: rweeqw
+        description: rweeqwdas
         type: Deployment
         spec:
           deploymentType: CustomDeployment
