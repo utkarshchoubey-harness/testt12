@@ -8,12 +8,13 @@ pipeline:
     - stage:
         name: dasadwqe
         identifier: dasadwqe
-        description: rwe
+        description: rweeqw
         type: Deployment
         spec:
           deploymentType: CustomDeployment
           customDeploymentRef:
             templateRef: custom1
+            versionLabel: ""
           service:
             serviceRef: <+input>
             serviceInputs: <+input>
