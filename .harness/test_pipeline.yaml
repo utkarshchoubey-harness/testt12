@@ -1,0 +1,26 @@
+pipeline:
+  name: test_pipeline
+  identifier: test_pipeline
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ttr
+        identifier: ttr
+        tags: {}
+        template:
+          templateRef: stageTemplate2
+          versionLabel: "1"
+          templateInputs:
+            type: Custom
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: Wait_1
+                      template:
+                        templateInputs:
+                          type: Wait
+                          spec:
+                            duration: <+input>

@@ -1,0 +1,31 @@
+template:
+  name: vdfwewrer
+  identifier: vdfwewrer
+  versionLabel: ewqqwewq
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: ger
+          identifier: ger
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
+      - stage:
+          name: eqw
+          identifier: eqw
+          tags: {}
+          template:
+            templateRef: account.testrbacchange
+            versionLabel: v1
+    allowStageExecutions: true

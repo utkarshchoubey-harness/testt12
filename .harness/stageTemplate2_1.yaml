@@ -1,0 +1,24 @@
+template:
+  name: stageTemplate2
+  identifier: stageTemplate2
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: Wait_1
+              identifier: Wait_1
+              template:
+                templateRef: stepxccvbnnfs
+                versionLabel: "2"
+                gitBranch: main-patch-e3-patch-3
+                templateInputs:
+                  type: Wait
+                  spec:
+                    duration: <+input>

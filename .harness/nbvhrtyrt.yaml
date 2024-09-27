@@ -1,0 +1,10 @@
+pipeline:
+  name: nbvhrtyrt
+  identifier: nbvhrtyrt
+  tags: {}
+  template:
+    templateRef: gdfgdfnondef
+    versionLabel: ds
+    gitBranch: master
+  projectIdentifier: fdsf
+  orgIdentifier: default

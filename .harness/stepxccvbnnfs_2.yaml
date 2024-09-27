@@ -1,0 +1,11 @@
+template:
+  name: stepxccvbnnfs
+  type: Step
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  spec:
+    type: Wait
+    spec:
+      duration: <+input>
+  identifier: stepxccvbnnfs
+  versionLabel: "2"
