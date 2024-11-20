@@ -1,0 +1,25 @@
+template:
+  name: dasdasd
+  identifier: dasdasd
+  versionLabel: dasdasdad
+  type: Pipeline
+  projectIdentifier: test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: saS
+          identifier: saS
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
