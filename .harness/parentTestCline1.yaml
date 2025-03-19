@@ -1,0 +1,16 @@
+pipeline:
+  name: parentTestCline1
+  identifier: parentTestCline1
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sad
+        identifier: sad
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: test1gfd
+          project: naidusanity
