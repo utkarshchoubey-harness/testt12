@@ -12,6 +12,5 @@ pipeline:
           org: default
           pipeline: test1gfd
           project: naidusanity
-          branch: main-patch-2
   identifier: parentTestCline1_Clone
   name: parentTestCline1 - Clone
