@@ -1,0 +1,9 @@
+pipeline:
+  name: testClonePipelineWithTemplate
+  identifier: testClonePipelineWithTemplate
+  tags: {}
+  template:
+    templateRef: templateTestClone
+    versionLabel: "1"
+  projectIdentifier: naidusanity
+  orgIdentifier: default
