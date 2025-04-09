@@ -1,0 +1,26 @@
+template:
+  name: "pipelineNonDefault1"
+  identifier: "pipelineNonDefault1"
+  versionLabel: "1"
+  type: "Pipeline"
+  orgIdentifier: "utkarsh"
+  tags: {}
+  spec:
+    stages:
+    - stage:
+        name: "xz"
+        identifier: "xz"
+        template:
+          templateRef: "org.stageNonDefault"
+          versionLabel: "1"
+          templateInputs:
+            type: "Approval"
+            spec:
+              execution:
+                steps:
+                - step:
+                    identifier: "gfd"
+                    template:
+                      templateInputs:
+                        type: "ShellScript"
+                        timeout: "<+input>"

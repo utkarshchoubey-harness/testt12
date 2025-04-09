@@ -1,0 +1,35 @@
+template:
+  name: "pipelineNonDefault"
+  identifier: "pipelineNonDefault"
+  versionLabel: "1"
+  type: "Pipeline"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
+  tags: {}
+  spec:
+    stages:
+    - stage:
+        name: "fdg"
+        identifier: "fdg"
+        template:
+          templateRef: "stageNonDefafult"
+          versionLabel: "1"
+          templateInputs:
+            type: "Approval"
+            spec:
+              execution:
+                steps:
+                - step:
+                    identifier: "gdf"
+                    template:
+                      templateInputs:
+                        type: "ShellScript"
+                        spec:
+                          source:
+                            type: "Inline"
+                            spec:
+                              script: "<+input>"
+                          environmentVariables:
+                          - name: "rwer"
+                            type: "String"
+                            value: "<+input>"

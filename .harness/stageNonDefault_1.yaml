@@ -1,0 +1,21 @@
+template:
+  name: "stageNonDefault"
+  identifier: "stageNonDefault"
+  versionLabel: "1"
+  type: "Stage"
+  orgIdentifier: "utkarsh"
+  tags: {}
+  spec:
+    type: "Approval"
+    spec:
+      execution:
+        steps:
+        - step:
+            name: "gfd"
+            identifier: "gfd"
+            template:
+              templateRef: "org.stepNonDefault"
+              versionLabel: "1"
+              templateInputs:
+                type: "ShellScript"
+                timeout: "<+input>"

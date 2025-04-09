@@ -1,0 +1,27 @@
+template:
+  name: samereponondefBranchPIpe
+  identifier: samereponondefBranchPIpe
+  versionLabel: "1"
+  type: Pipeline
+  projectIdentifier: fdsf
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: tgre
+          identifier: tgre
+          tags: {}
+          template:
+            templateRef: teertete54
+            versionLabel: "54545"
+            gitBranch: main-patch-2
+      - stage:
+          name: fsdrfe
+          identifier: fsdrfe
+          tags: {}
+          template:
+            templateRef: gg
+            versionLabel: rte
+            gitBranch: main-patch-2
+    allowStageExecutions: true
