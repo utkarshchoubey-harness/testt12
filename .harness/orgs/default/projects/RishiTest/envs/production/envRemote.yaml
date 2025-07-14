@@ -1,0 +1,8 @@
+environment:
+  name: envRemote
+  identifier: envRemote
+  description: ""
+  tags: {}
+  type: Production
+  orgIdentifier: default
+  projectIdentifier: RishiTest
