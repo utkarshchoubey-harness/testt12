@@ -1,0 +1,32 @@
+pipeline:
+  name: utk
+  identifier: utk
+  projectIdentifier: utkarsh
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ghj
+        identifier: ghj
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: false
+          caching:
+            enabled: true
+            override: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: echo hey
