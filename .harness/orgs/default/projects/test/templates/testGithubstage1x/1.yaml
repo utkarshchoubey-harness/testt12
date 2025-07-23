@@ -1,0 +1,19 @@
+template:
+  name: testGithubstage1x
+  identifier: testGithubstage1x
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: bfd
+              identifier: bfd
+              template:
+                templateRef: testGitHib1
+                versionLabel: "1"
