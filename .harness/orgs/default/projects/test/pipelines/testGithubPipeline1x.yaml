@@ -1,0 +1,14 @@
+pipeline:
+  name: testGithubPipeline1x
+  identifier: testGithubPipeline1x
+  projectIdentifier: test
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: vds
+        identifier: vds
+        tags: {}
+        template:
+          templateRef: testGithubstage1x
+          versionLabel: "1"
