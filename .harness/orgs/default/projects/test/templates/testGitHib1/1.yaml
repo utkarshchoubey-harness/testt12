@@ -1,0 +1,12 @@
+template:
+  name: testGitHib1
+  identifier: testGitHib1
+  versionLabel: "1"
+  type: Step
+  projectIdentifier: test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
