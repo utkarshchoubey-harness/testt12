@@ -8,38 +8,6 @@ template:
   spec:
     stages:
       - stage:
-          name: gf
-          identifier: gf
-          description: ""
-          type: CI
-          spec:
-            cloneCodebase: false
-            caching:
-              enabled: false
-              override: true
-              paths: []
-            buildIntelligence:
-              enabled: false
-            infrastructure:
-              type: KubernetesDirect
-              spec:
-                connectorRef: ciplay
-                namespace: ng
-                automountServiceAccountToken: true
-                nodeSelector: {}
-                os: Linux
-            execution:
-              steps:
-                - step:
-                    type: Run
-                    name: Run_1
-                    identifier: Run_1
-                    spec:
-                      connectorRef: account.harnessImage
-                      image: alpine
-                      shell: Sh
-                      command: echo hey1
-      - stage:
           name: vfc
           identifier: vfc
           description: ""
