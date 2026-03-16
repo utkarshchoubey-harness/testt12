@@ -20,7 +20,6 @@ spec:
       - stage:
           name: g
           identifier: g
-          description: ""
           type: CI
           spec:
             cloneCodebase: false
