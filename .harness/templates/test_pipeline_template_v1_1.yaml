@@ -17,3 +17,35 @@ spec:
                 input_vars: {}
                 output_vars: {}
               timeout: 10s
+      - stage:
+          name: g
+          identifier: g
+          description: ""
+          type: CI
+          spec:
+            cloneCodebase: false
+            caching:
+              enabled: false
+              override: true
+              paths: []
+            buildIntelligence:
+              enabled: false
+            infrastructure:
+              type: KubernetesDirect
+              spec:
+                connectorRef: ciplay
+                namespace: harness-ng
+                automountServiceAccountToken: true
+                nodeSelector: {}
+                os: Linux
+            execution:
+              steps:
+                - step:
+                    type: Run
+                    name: Run_1
+                    identifier: Run_1
+                    spec:
+                      connectorRef: account.harnessImage
+                      image: alpine
+                      shell: Sh
+                      command: echo hey              
