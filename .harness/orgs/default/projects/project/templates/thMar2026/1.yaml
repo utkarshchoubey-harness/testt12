@@ -38,4 +38,4 @@ template:
                       connectorRef: account.harnessImage
                       image: alpine
                       shell: Sh
-                      command: echo hey          
+                      command: echo hey1
