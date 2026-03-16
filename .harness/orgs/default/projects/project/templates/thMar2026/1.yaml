@@ -5,7 +5,6 @@ template:
   type: Pipeline
   projectIdentifier: project
   orgIdentifier: default
-  tags: {}
   spec:
     stages:
       - stage:
