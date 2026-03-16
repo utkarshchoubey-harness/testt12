@@ -1,0 +1,9 @@
+pipeline:
+  name: testxyzpipeline1
+  identifier: testxyzpipeline1
+  tags: {}
+  template:
+    templateRef: testxyz1234
+    versionLabel: "1"
+  projectIdentifier: project
+  orgIdentifier: default
