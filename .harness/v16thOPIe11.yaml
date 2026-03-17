@@ -1,6 +1,7 @@
 pipeline:
   name: v16thOPIe11
   identifier: v16thOPIe11
+  description: ""
   template:
     templateRef: thMar2026
     versionLabel: "1"
