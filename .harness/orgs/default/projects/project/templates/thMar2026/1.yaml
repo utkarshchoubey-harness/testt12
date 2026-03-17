@@ -6,22 +6,7 @@ template:
   projectIdentifier: project
   orgIdentifier: default
   spec:
-    stages:
-      - stage:
-          name: vfc
-          identifier: vfc
-          description: ""
-          type: Custom
-          spec:
-            execution:
-              steps:
-                - step:
-                    type: Wait
-                    name: Wait_1
-                    identifier: Wait_1
-                    spec:
-                      duration: 10m
-          tags: {}                      
+    stages:            
       - stage:
           name: gf
           identifier: gf
