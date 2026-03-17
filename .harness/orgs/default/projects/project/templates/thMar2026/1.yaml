@@ -6,36 +6,19 @@ template:
   projectIdentifier: project
   orgIdentifier: default
   spec:
-    stages:            
+    stages:                 
       - stage:
-          name: gf
-          identifier: gf
+          name: vfc
+          identifier: vfc
           description: ""
-          type: CI
+          type: Custom
           spec:
-            cloneCodebase: false
-            caching:
-              enabled: false
-              override: true
-              paths: []
-            buildIntelligence:
-              enabled: false
-            infrastructure:
-              type: KubernetesDirect
-              spec:
-                connectorRef: ciplay
-                namespace: ng
-                automountServiceAccountToken: true
-                nodeSelector: {}
-                os: Linux
             execution:
               steps:
                 - step:
-                    type: Run
-                    name: Run_1
-                    identifier: Run_1
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
                     spec:
-                      connectorRef: account.harnessImage
-                      image: alpine
-                      shell: Sh
-                      command: echo hey1          
+                      duration: 10m
+          tags: {}                                
