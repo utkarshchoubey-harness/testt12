@@ -1,0 +1,32 @@
+template:
+  name: "pipelineRemoteDF"
+  identifier: "pipelineRemoteDF"
+  versionLabel: "1"
+  type: "Pipeline"
+  projectIdentifier: "njh"
+  orgIdentifier: "default"
+  tags: {}
+  spec:
+    stages:
+    - stage:
+        name: "re"
+        identifier: "re"
+        template:
+          templateRef: "trestageInline"
+          versionLabel: "1"
+          templateInputs:
+            type: "Approval"
+            spec:
+              execution:
+                steps:
+                - step:
+                    identifier: "fgh"
+                    template:
+                      templateInputs:
+                        type: "ShellScript"
+                        spec:
+                          source:
+                            type: "Inline"
+                            spec:
+                              script: "<+input>"
+                        timeout: "<+input>"

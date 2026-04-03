@@ -1,0 +1,19 @@
+template:
+  name: stageND
+  identifier: stageND
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: njh
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: puyt
+              identifier: puyt
+              template:
+                templateRef: stepND
+                versionLabel: "1"
