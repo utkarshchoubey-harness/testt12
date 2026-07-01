@@ -1,0 +1,12 @@
+template:
+  name: sfdsffsdfsf
+  identifier: sfdsffsdfsf
+  versionLabel: sdfd
+  type: Step
+  projectIdentifier: RishiTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
